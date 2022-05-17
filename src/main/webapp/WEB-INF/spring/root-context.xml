@@ -23,7 +23,7 @@
     -->
     <beans:bean id="requestDataValueProcessor" class="org.springframework.security.web.servlet.support.csrf.CsrfRequestDataValueProcessor"/>
         
-    <beans:bean id="myAuthenticationSuccessHandler" class="com.webschedule.design.services.MySimpleUrlAuthenticationSuccessHandler" />
+    <beans:bean id="myAuthenticationSuccessHandler" class="com.github.lightyagami111.webschedule.design.services.MySimpleUrlAuthenticationSuccessHandler" />
     
     <http auto-config="true" >
         <intercept-url pattern="/**" access="hasRole('ADMIN')" />
